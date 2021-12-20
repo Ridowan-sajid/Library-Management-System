@@ -33,7 +33,7 @@ namespace Project
         {
             try
             {
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+                SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
                 con.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO BookTable(name,author,genre,release) VALUES(@name, @author, @genre, @release)", con);
 
