@@ -30,7 +30,7 @@ namespace Project
         public int uId = UserLogIn.userId;
         void BindData()
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM Payment WHERE userid='"+uId+"'", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -43,7 +43,7 @@ namespace Project
         private void Payment_Load(object sender, EventArgs e)
         {
             BindData();
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
             SqlDataAdapter da = new SqlDataAdapter(" SELECT count(*) FROM Payment WHERE userid = '" + uId + "'", con);
 
             DataTable dt = new DataTable();
@@ -65,7 +65,7 @@ namespace Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;Persist Security Info=True;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;Persist Security Info=True;User ID=sa;Password=************");
             con.Open();
             int taka = Convert.ToInt32(textBox1.Text);
 
