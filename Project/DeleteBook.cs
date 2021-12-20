@@ -19,7 +19,7 @@ namespace Project
         }
         void BindData()
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM BookTable", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -31,7 +31,7 @@ namespace Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
             con.Open();
             SqlCommand cmd = new SqlCommand("DELETE BookTable WHERE id=@id", con);
             cmd.Parameters.AddWithValue("@id", int.Parse(textBox1.Text));
