@@ -51,11 +51,11 @@ namespace Project
 
             if (dt.Rows[0][0].ToString() == "1")
             {
-                label1.Text = "Your Duo is 0";
+                label1.Text = "Your Due is 0";
             }
             else
             {
-                label1.Text = "Your Duo is 100";
+                label1.Text = "Your Due is 100";
             }
 
 
@@ -69,7 +69,7 @@ namespace Project
             con.Open();
             int taka = Convert.ToInt32(textBox1.Text);
 
-            if(label1.Text=="Your Duo is 100"){
+            if(label1.Text=="Your Due is 100"){
                 if (taka == 100)
                 {
                     SqlCommand cmd = new SqlCommand("INSERT INTO Payment(userid,paymentid) VALUES ('" + uId + "','" + taka + "')", con);
@@ -78,7 +78,7 @@ namespace Project
                     con.Close();
                     textBox1.Text = "";
                     MessageBox.Show("Your payment has been paid successfully!");
-                    label1.Text = "Your Duo is 0";
+                    label1.Text = "Your Due is 0";
                 }
                 else
                 {
