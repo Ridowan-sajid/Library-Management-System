@@ -24,7 +24,7 @@ namespace Project
         }
         void BindData()
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM BookTable", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -37,7 +37,7 @@ namespace Project
         {
             try
             {
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+                SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
                 con.Open();
                 SqlCommand cmd = new SqlCommand("UPDATE BookTable SET name=@name , author=@author , genre=@genre , release=@release WHERE id=@id", con);
                 cmd.Parameters.AddWithValue("@id", int.Parse(textBox4.Text));
