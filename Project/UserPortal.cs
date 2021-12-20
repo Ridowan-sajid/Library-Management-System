@@ -26,7 +26,7 @@ namespace Project
         public int Findid()
         {
             
-            SqlConnection con = new SqlConnection("data source=laptop-bu4fcaff;initial catalog=library;user id=sa;password=788881137eminem");
+            SqlConnection con = new SqlConnection("data source=laptop-bu4fcaff;initial catalog=library;user id=sa;password=************");
             con.Open();
             SqlCommand cmd = new SqlCommand("select id from normal_user where username='"+ username + "'", con);
 
