@@ -21,7 +21,7 @@ namespace Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
             SqlDataAdapter da = new SqlDataAdapter(" SELECT count(*) FROM Admin_user WHERE username = '" + textBox1.Text + "' AND password = '" + textBox2.Text + "'", con);
 
             DataTable dt = new DataTable();
