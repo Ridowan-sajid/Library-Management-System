@@ -27,7 +27,7 @@ namespace Project
         public static int userId;
         public void FindId()
         {
-            SqlConnection con = new SqlConnection("data source=laptop-bu4fcaff;initial catalog=library;user id=sa;password=788881137eminem");
+            SqlConnection con = new SqlConnection("data source=laptop-bu4fcaff;initial catalog=library;user id=sa;password=************");
             con.Open();
             SqlCommand cmd = new SqlCommand("select id from normal_user where username='" + username + "'", con);
 
@@ -52,7 +52,7 @@ namespace Project
         {
             
             username = textBox1.Text;
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
             SqlDataAdapter da = new SqlDataAdapter(" SELECT count(*) FROM Normal_user WHERE username = '" + username + "' AND password = '" + textBox2.Text + "' AND valid= 1", con);
 
             DataTable dt = new DataTable();
