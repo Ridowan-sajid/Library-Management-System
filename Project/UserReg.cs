@@ -22,7 +22,7 @@ namespace Project
         {
             try
             {
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+                SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
                 con.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO Normal_user(username,password,gmail,address,mobile,age,gender) VALUES(@username, @password, @gmail, @address, @mobile, @age, @gender)", con);
                 String username = textBox1.Text;
