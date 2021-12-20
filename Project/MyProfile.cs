@@ -22,7 +22,7 @@ namespace Project
         void BindData()
         {
 
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM Normal_user WHERE id = '"+uId+"'", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -34,7 +34,7 @@ namespace Project
 
         private void MyProfile_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("data source=laptop-bu4fcaff;initial catalog=library;user id=sa;password=788881137eminem");
+            SqlConnection con = new SqlConnection("data source=laptop-bu4fcaff;initial catalog=library;user id=sa;password=************");
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM normal_user WHERE id='" + uId + "'", con);
 
@@ -88,7 +88,7 @@ namespace Project
             {
 
 
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=788881137eminem");
+                SqlConnection con = new SqlConnection("Data Source=LAPTOP-BU4FCAFF;Initial Catalog=Library;User ID=sa;Password=************");
                 con.Open();
                 SqlCommand cmd = new SqlCommand("UPDATE Normal_user SET username=@username,password=@password , gmail=@gmail , address=@address, mobile=@mobile , age=@age, gender=@gender WHERE id='" + uId + "'", con);
                 cmd.Parameters.AddWithValue("@username", textBox1.Text);
